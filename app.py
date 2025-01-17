@@ -32,7 +32,7 @@ app_mode = st.sidebar.selectbox('Please select a page', ['Home', 'Disease Detect
 
 if app_mode == "Home":
     # st.title("Welcome to CitNet7 - Citrus Plant Disease Detection")
-    st.image("d:/python/Machine_Learning/Citrus_Plant_disease_Detection/citrus.jpeg", 
+    st.image("citrus.jpeg", 
              caption="Citrus Plant", use_container_width=True)
     st.write("""
         This application helps detect diseases in citrus plants using a Convolutional Neural Network (CNN).
