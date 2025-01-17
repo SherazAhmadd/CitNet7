@@ -41,43 +41,43 @@ if app_mode == "Home":
         Upload an image of a citrus plant leaf to classify it as healthy or infected with Citrus Canker, Citrus Greening, or Leaf Miner.
     """)
 
-st.write("""
-______________________________________________________________________________________________________
-### How to use the application
+    st.write("""
+    ______________________________________________________________________________________________________
+    ### How to use the application
+    
+    1. Navigate to the **Disease Detection** page.
+    2. Upload an image of the leaf from the citrus plant.
+    3. Wait for the model to classify the disease and display the result.
+    
+    
+            """)
+    
+    
+    
+    
+    st.write("""
+    ______________________________________________________________________________________________________
+    ### Usage/Examples
+    
+    Use infected Images of:
+    - Citrus - Canker
+    - Citus - Leaf-Minor
+    - Citus - Greening (HLB)
+    - Healthy Citrus Plant
+    ______________________________________________________________________________________________________
+            """)
 
-1. Navigate to the **Disease Detection** page.
-2. Upload an image of the leaf from the citrus plant.
-3. Wait for the model to classify the disease and display the result.
-
-
-        """)
-
-
-
-
-st.write("""
-______________________________________________________________________________________________________
-### Usage/Examples
-
-Use infected Images of:
-- Citrus - Canker
-- Citus - Leaf-Minor
-- Citus - Greening (HLB)
-- Healthy Citrus Plant
-______________________________________________________________________________________________________
-        """)
-
-st.markdown("""
-        ### Contact Us:
-        - **Email:** [ranasheraz.202101902@gcuf.edu.pk](mailto:ranasheraz.202101902@gcuf.edu.pk)
-        - **LinkedIn:** [Rana Sheraz Ahmad](https://www.linkedin.com/in/sherazahmadd/)
-        - **GitHub:** [Rana Sheraz Ahmad](https://github.com/SherazAhmadd)
-             __________________________________________________________
-        - **Email:** [m.tahirulqamar@hotmail.com](mailto:m.tahirulqamar@hotmail.com)
-        - **LinkedIn:** [Muhammad Tahir ul Qamar](https://www.linkedin.com/in/muhammad-tahir-ul-qamar-9999057a/)
-        - **GitHub:** [Muhammad Tahir ul Qamar](https://github.com/tahirulqamar)
-        ______________________________________________________________________________________________________
-        """)
+    st.markdown("""
+            ### Contact Us:
+            - **Email:** [ranasheraz.202101902@gcuf.edu.pk](mailto:ranasheraz.202101902@gcuf.edu.pk)
+            - **LinkedIn:** [Rana Sheraz Ahmad](https://www.linkedin.com/in/sherazahmadd/)
+            - **GitHub:** [Rana Sheraz Ahmad](https://github.com/SherazAhmadd)
+                 __________________________________________________________
+            - **Email:** [m.tahirulqamar@hotmail.com](mailto:m.tahirulqamar@hotmail.com)
+            - **LinkedIn:** [Muhammad Tahir ul Qamar](https://www.linkedin.com/in/muhammad-tahir-ul-qamar-9999057a/)
+            - **GitHub:** [Muhammad Tahir ul Qamar](https://github.com/tahirulqamar)
+            ______________________________________________________________________________________________________
+            """)
 # Define the class names
 class_name = {0: "Canker", 1: "Greening", 2: "Healthy", 3: "Leaf Miner"}
 
@@ -86,8 +86,8 @@ class_name = {0: "Canker", 1: "Greening", 2: "Healthy", 3: "Leaf Miner"}
 
 
 
-    if app_mode == 'Disease Detection':
-        uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
+if app_mode == 'Disease Detection':
+    uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
     if uploaded_file is not None:
         st.image(uploaded_file, caption="Uploaded Image", width=160)  # Resize the image using the `width` parameter
