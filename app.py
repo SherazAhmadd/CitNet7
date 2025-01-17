@@ -17,7 +17,7 @@ st.markdown(
 st.title("🍊CitNet7 - Citrus Plant Disease Detection ")
 
 def model_prediction(test_image):
-    model = tf.keras.models.load_model('D:\python\Machine_Learning\Citrus_Plant_disease_Detection\CitNet7.h5')
+    model = tf.keras.models.load_model('CitNet7.h5')
     image = keras.preprocessing.image.load_img(test_image, target_size=(256, 256))
     input_arr = keras.preprocessing.image.img_to_array(image)
     input_arr = np.array([input_arr])  # Convert single image to a batch.
