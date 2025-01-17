@@ -55,7 +55,7 @@ ________________________________________________________________________________
 
 
 
-    st.write("""
+st.write("""
 ______________________________________________________________________________________________________
 ### Usage/Examples
 
@@ -67,7 +67,7 @@ Use infected Images of:
 ______________________________________________________________________________________________________
         """)
 
-    st.markdown("""
+st.markdown("""
         ### Contact Us:
         - **Email:** [ranasheraz.202101902@gcuf.edu.pk](mailto:ranasheraz.202101902@gcuf.edu.pk)
         - **LinkedIn:** [Rana Sheraz Ahmad](https://www.linkedin.com/in/sherazahmadd/)
