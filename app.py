@@ -83,10 +83,11 @@ class_name = {0: "Canker", 1: "Greening", 2: "Healthy", 3: "Leaf Miner"}
 
 # for predicting the class of disease
 
-                
 
-if app_mode == 'Disease Detection':
-    uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
+
+
+    if app_mode == 'Disease Detection':
+        uploaded_file = st.file_uploader("Choose an image...", type=["jpg", "png", "jpeg"])
 
     if uploaded_file is not None:
         st.image(uploaded_file, caption="Uploaded Image", width=160)  # Resize the image using the `width` parameter
