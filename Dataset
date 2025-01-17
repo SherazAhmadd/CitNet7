@@ -1,0 +1,10 @@
+We used the dataset that contains 12,374 images spread across 4 classes for training the model.
+This dataset contains various types of disease such as canker,Leaf-Minor,greening, and healthy.
+# Dataset Description :
+________________________
+| Disease     | Images  |
+| Leaf-miner  | 3104    | 
+| Canker      | 2157    | 
+| Greening    | 2867    | 
+| Healthy     | 4256    |
+------------------------
