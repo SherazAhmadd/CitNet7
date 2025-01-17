@@ -40,7 +40,8 @@ if app_mode == "Home":
         This application helps detect diseases in citrus plants using a Convolutional Neural Network (CNN).
         Upload an image of a citrus plant leaf to classify it as healthy or infected with Citrus Canker, Citrus Greening, or Leaf Miner.
     """)
-        st.write("""
+
+st.write("""
 ______________________________________________________________________________________________________
 ### How to use the application
 
